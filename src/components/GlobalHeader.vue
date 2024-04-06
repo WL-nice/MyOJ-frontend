@@ -25,7 +25,7 @@
     </a-col>
     <a-col flex="100px">
       <div>
-        {{ store.state.user?.loginUser?.userName ?? "未登录" }}
+        {{ store.state.user.loginUser.username ?? "未登录" }}
       </div>
     </a-col>
   </a-row>
@@ -51,7 +51,7 @@ const visibleRoutes = computed(() => {
     }
     // 根据权限过滤菜单
     if (
-      !checkAccess(store.state.user.loginUser, item?.meta?.access as string)
+      !checkAccess(store.state.user.loginUser, item?.meta?.access as number)
     ) {
       return false;
     }
@@ -73,22 +73,15 @@ const doMenuClick = (key: string) => {
   });
 };
 
-setTimeout(() => {
-  store.dispatch("user/getLoginUser", {
-    userName: "muqiu",
-    userRole: ACCESS_ENUM.ADMIN,
-  });
-}, 3000);
+// setTimeout(() => {
+//   store.dispatch("user/getLoginUser", {
+//     userName: "muqiu",
+//     userRole: ACCESS_ENUM.ADMIN,
+//   });
+// }, 3000);
 </script>
 
 <style scoped>
-.globalHeader {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 40px;
-  background-color: var(--color-neutral-2);
-}
-
 .title-bar {
   display: flex;
   align-items: center;
