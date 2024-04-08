@@ -3,15 +3,15 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { OrderItem } from './OrderItem';
-import type { Team } from './Team';
-export type PageTeam = {
-    records?: Array<Team>;
+import type { QuestionVO } from './QuestionVO';
+export type PageQuestionVO = {
+    records?: Array<QuestionVO>;
     total?: number;
     size?: number;
     current?: number;
     orders?: Array<OrderItem>;
-    optimizeCountSql?: PageTeam;
-    searchCount?: PageTeam;
+    optimizeCountSql?: PageQuestionVO;
+    searchCount?: PageQuestionVO;
     optimizeJoinOfCountSql?: boolean;
     maxLimit?: number;
     countId?: string;

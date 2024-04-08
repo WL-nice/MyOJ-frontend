@@ -2,8 +2,9 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-export type OrderItem = {
-    column?: string;
-    asc?: boolean;
+export type JudgeConfig = {
+    timeLimit?: number;
+    memoryLimit?: number;
+    stackLimit?: number;
 };
 
