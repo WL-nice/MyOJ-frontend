@@ -12,6 +12,9 @@
       }"
       @page-change="onPageChange"
     >
+      <template #createTime="{ record }">
+        {{ moment(record.createTime).format("YYYY-MM-DD") }}
+      </template>
       <template #optional="{ record }">
         <a-space>
           <a-button type="primary" @click="doUpdate(record)"> 修改</a-button>
@@ -26,8 +29,8 @@
 import { onMounted, ref, watchEffect } from "vue";
 import { Question, QuestionControllerService } from "../../../generated";
 import message from "@arco-design/web-vue/es/message";
-import * as querystring from "querystring";
 import { useRouter } from "vue-router";
+import moment from "moment/moment";
 
 const tableRef = ref();
 
@@ -96,20 +99,12 @@ const columns = [
     dataIndex: "acceptedNum",
   },
   {
-    title: "判题用例",
-    dataIndex: "judgeCase",
-  },
-  {
-    title: "判题配置",
-    dataIndex: "judgeConfig",
-  },
-  {
     title: "用户id",
     dataIndex: "userId",
   },
   {
     title: "创建时间",
-    dataIndex: "createTime",
+    slotName: "createTime",
   },
   {
     title: "操作",
