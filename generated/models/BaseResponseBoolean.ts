@@ -3,9 +3,9 @@
 /* tslint:disable */
 /* eslint-disable */
 export type BaseResponseBoolean = {
-    code?: number;
-    data?: boolean;
-    message?: string;
-    description?: string;
+  code?: number;
+  data?: boolean;
+  message?: string;
+  description?: string;
 };
 

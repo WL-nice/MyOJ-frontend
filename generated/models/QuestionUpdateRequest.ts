@@ -2,15 +2,16 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { JudgeCase } from './JudgeCase';
-import type { JudgeConfig } from './JudgeConfig';
+import type { JudgeCase } from "./JudgeCase";
+import type { JudgeConfig } from "./JudgeConfig";
+
 export type QuestionUpdateRequest = {
-    id?: number;
-    title?: string;
-    content?: string;
-    tags?: Array<string>;
-    answer?: string;
-    judgeCase?: JudgeCase;
-    judgeConfig?: JudgeConfig;
+  id?: number;
+  title?: string;
+  content?: string;
+  tags?: Array<string>;
+  answer?: string;
+  judgeCase?: Array<JudgeCase>;
+  judgeConfig?: JudgeConfig;
 };
 

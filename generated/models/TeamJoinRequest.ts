@@ -3,7 +3,7 @@
 /* tslint:disable */
 /* eslint-disable */
 export type TeamJoinRequest = {
-    teamId?: number;
-    password?: string;
+  teamId?: number;
+  password?: string;
 };
 

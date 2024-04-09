@@ -2,11 +2,12 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { PageQuestion } from './PageQuestion';
+import type { PageQuestion } from "./PageQuestion";
+
 export type BaseResponsePageQuestion = {
-    code?: number;
-    data?: PageQuestion;
-    message?: string;
-    description?: string;
+  code?: number;
+  data?: PageQuestion;
+  message?: string;
+  description?: string;
 };
 

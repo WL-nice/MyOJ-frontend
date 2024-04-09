@@ -3,8 +3,8 @@
 /* tslint:disable */
 /* eslint-disable */
 export type QuestionSubmitAddRequest = {
-    language?: string;
-    code?: string;
-    questionId?: number;
+  language?: string;
+  code?: string;
+  questionId?: number;
 };
 

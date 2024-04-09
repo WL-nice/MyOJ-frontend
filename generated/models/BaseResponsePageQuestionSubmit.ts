@@ -2,11 +2,12 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { PageQuestionSubmit } from './PageQuestionSubmit';
+import type { PageQuestionSubmit } from "./PageQuestionSubmit";
+
 export type BaseResponsePageQuestionSubmit = {
-    code?: number;
-    data?: PageQuestionSubmit;
-    message?: string;
-    description?: string;
+  code?: number;
+  data?: PageQuestionSubmit;
+  message?: string;
+  description?: string;
 };
 

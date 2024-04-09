@@ -26,8 +26,8 @@
           登录
         </a-button>
         <a-button type="primary" style="width: 120px" @click="onClick">
-          注册</a-button
-        >
+          注册
+        </a-button>
       </a-form-item>
     </a-form>
   </div>

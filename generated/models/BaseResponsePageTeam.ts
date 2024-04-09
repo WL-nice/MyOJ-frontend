@@ -2,11 +2,12 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { PageTeam } from './PageTeam';
+import type { PageTeam } from "./PageTeam";
+
 export type BaseResponsePageTeam = {
-    code?: number;
-    data?: PageTeam;
-    message?: string;
-    description?: string;
+  code?: number;
+  data?: PageTeam;
+  message?: string;
+  description?: string;
 };
 

@@ -2,13 +2,14 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-export type UserUpdateRequest = {
+export type UserQueryRequest = {
+  pageSize?: number;
+  current?: number;
+  sortOrder?: string;
+  sortField?: string;
   id?: number;
   username?: string;
   userAccount?: string;
-  avatarUrl?: string;
-  gender?: number;
-  userPassword?: string;
   phone?: string;
   email?: string;
   tags?: Array<string>;

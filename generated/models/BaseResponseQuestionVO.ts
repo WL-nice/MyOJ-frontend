@@ -2,11 +2,11 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { Question } from "./Question";
+import type { QuestionVO } from "./QuestionVO";
 
-export type BaseResponseQuestion = {
+export type BaseResponseQuestionVO = {
   code?: number;
-  data?: Question;
+  data?: QuestionVO;
   message?: string;
   description?: string;
 };

@@ -3,9 +3,9 @@
 /* tslint:disable */
 /* eslint-disable */
 export type BaseResponseLong = {
-    code?: number;
-    data?: number;
-    message?: string;
-    description?: string;
+  code?: number;
+  data?: number;
+  message?: string;
+  description?: string;
 };
 

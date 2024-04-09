@@ -2,11 +2,12 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { User } from './User';
+import type { User } from "./User";
+
 export type BaseResponseUser = {
-    code?: number;
-    data?: User;
-    message?: string;
-    description?: string;
+  code?: number;
+  data?: User;
+  message?: string;
+  description?: string;
 };
 

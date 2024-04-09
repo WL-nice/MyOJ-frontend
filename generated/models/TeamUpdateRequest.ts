@@ -3,11 +3,11 @@
 /* tslint:disable */
 /* eslint-disable */
 export type TeamUpdateRequest = {
-    id?: number;
-    teamName?: string;
-    description?: string;
-    expireTime?: string;
-    password?: string;
-    teamStatus?: number;
+  id?: number;
+  teamName?: string;
+  description?: string;
+  expireTime?: string;
+  password?: string;
+  teamStatus?: number;
 };
 

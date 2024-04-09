@@ -3,9 +3,9 @@
 /* tslint:disable */
 /* eslint-disable */
 export type BaseResponseInteger = {
-    code?: number;
-    data?: number;
-    message?: string;
-    description?: string;
+  code?: number;
+  data?: number;
+  message?: string;
+  description?: string;
 };
 

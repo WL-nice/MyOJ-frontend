@@ -2,11 +2,12 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { Team } from './Team';
+import type { Team } from "./Team";
+
 export type BaseResponseTeam = {
-    code?: number;
-    data?: Team;
-    message?: string;
-    description?: string;
+  code?: number;
+  data?: Team;
+  message?: string;
+  description?: string;
 };
 

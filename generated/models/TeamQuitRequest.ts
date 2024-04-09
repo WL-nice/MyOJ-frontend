@@ -3,6 +3,6 @@
 /* tslint:disable */
 /* eslint-disable */
 export type TeamQuitRequest = {
-    teamId?: number;
+  teamId?: number;
 };
 
