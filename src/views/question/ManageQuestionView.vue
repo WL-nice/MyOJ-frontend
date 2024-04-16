@@ -78,10 +78,10 @@ const columns = [
     title: "标题",
     dataIndex: "title",
   },
-  {
-    title: "内容",
-    dataIndex: "content",
-  },
+  // {
+  //   title: "内容",
+  //   dataIndex: "content",
+  // },
   {
     title: "标签",
     dataIndex: "tags",
@@ -99,7 +99,7 @@ const columns = [
     dataIndex: "acceptedNum",
   },
   {
-    title: "用户id",
+    title: "创建用户id",
     dataIndex: "userId",
   },
   {

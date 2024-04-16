@@ -23,6 +23,14 @@ export default {
         });
       }
     },
+    async logout({ commit, state }) {
+      const res = await UserControllerService.userLogout();
+      if (res.code === 0) {
+        commit("updateUser", {
+          username: "未登录",
+        });
+      }
+    },
   },
 
   // actions: {

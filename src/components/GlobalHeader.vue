@@ -24,9 +24,14 @@
       </a-menu>
     </a-col>
     <a-col flex="100px">
-      <div>
-        {{ store.state.user?.loginUser?.username ?? "未登录" }}
-      </div>
+      <a-dropdown position="bottom">
+        <a-button
+          >{{ store.state.user?.loginUser?.username ?? "未登录" }}
+        </a-button>
+        <template #content>
+          <a-doption @click="logout">注销</a-doption>
+        </template>
+      </a-dropdown>
     </a-col>
   </a-row>
 </template>
@@ -38,6 +43,8 @@ import { ref, computed } from "vue";
 import { useStore } from "vuex";
 import checkAccess from "@/access/checkAccess";
 import ACCESS_ENUM from "@/access/accessEnum";
+import { UserControllerService } from "../../generated";
+import message from "@arco-design/web-vue/es/message";
 
 const store = useStore();
 const router = useRouter();
@@ -73,6 +80,13 @@ const doMenuClick = (key: string) => {
   });
 };
 
+const logout = async () => {
+  await store.dispatch("user/logout");
+  router.push({
+    path: "/user/login",
+    replace: true,
+  });
+};
 // setTimeout(() => {
 //   store.dispatch("user/getLoginUser", {
 //     userName: "muqiu",
